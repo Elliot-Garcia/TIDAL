@@ -6,8 +6,8 @@
     color:#000000;
 }
 :root {
-    --main-color: #DDA1FF;
-    --second-color: #CC7DFA;
+    --main-color: #FFE4E1;
+    --second-color:#FFDAB9 ;
     --nav-color: white;
     --main-text-color: white;
     --padding-page: 10px;
@@ -46,6 +46,10 @@ main {
     flex-basis: 40%;
 }
 
+.bordure_connexion{
+    border-radius: 10px;
+}
+
 form {
     background-color: var(--second-color);
     margin: 10px;
@@ -67,6 +71,7 @@ li {
 .link_recherche {
     background-color: var(--second-color);
     padding: 50px;
+    border-radius: 10px;
 }
 
 
@@ -77,6 +82,8 @@ li {
     background-color: white;
     position: sticky;
     top: 0px;
+    background-color: var(--main-color);
+    height: 40px;
 
 }
 
@@ -151,14 +158,27 @@ nav > ul li:hover .sous_menu{
     margin-left: 15%;
     padding: 15px;
     border-radius: 10px;
+    height: 15px;
+    
+    
 }
 
 input[type=text] {
-    width: 30%;
+    width: 45%;
     -webkit-transition: width 0.15s ease-in-out;
     transition: width 0.15s ease-in-out;
  }
 
  input[type=text]:focus {
+    width: 70%;
+  }
+
+  input[type=password] {
+    width: 45%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+ }
+
+ input[type=password]:focus {
     width: 70%;
   }
