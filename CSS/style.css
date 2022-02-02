@@ -68,3 +68,83 @@ li {
     background-color: var(--second-color);
     padding: 50px;
 }
+
+
+
+.navi {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+
+}
+
+nav ul {
+list-style-type: none;
+flex-direction: unset;
+height: 200px;
+width: 100%;
+
+}
+
+nav ul li{
+    float: left;
+    width: 10%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid solid;
+}
+
+.sous_menu{
+    display: none;
+    background-color: white;
+    padding-left: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+nav > ul li:hover .sous_menu{
+    display: block;
+}
+
+.sous_menu li{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.sous_menu a{
+    padding: 10%;
+    border-bottom: none;
+}
+
+.sous_menu a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+
+.deroulant > a::after{
+    content:"";
+    font-size: 12px;
+}
+
+
