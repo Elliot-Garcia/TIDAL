@@ -3,6 +3,6 @@
     $smarty = new Smarty();
     
     $smarty->assign('title', 'Acupuncture');
-    $smarty->assign('page', 'accueil.tpl');
-    $smarty->display('/TPL/main_structure.tpl');
+    $smarty->assign('page', 'TPL/accueil.tpl');
+    $smarty->display('TPL/main_structure.tpl');
 ?>
