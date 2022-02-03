@@ -3,13 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Acupunture</title>
-
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
-    <?php
-        $bd = pg_connect("host=localhost port=3080 dbname=odtidal")
-    ?>
     <!-- Header -->
     <?php require_once('HTML/header.html') ?>
 

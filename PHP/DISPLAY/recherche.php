@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/CSS/style.css">
-    <title>SALUT</title>
+    <title>Recherche</title>
 </head>
 <body>
     <?php require_once('../../HTML/header.html') ?>
