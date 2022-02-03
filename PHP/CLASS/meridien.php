@@ -6,11 +6,11 @@ class Meridien{
     private $element;
     private $yin;
 
-    public function __construct(){
-        $this->code = 0;
-        $this->nom = 0;
-        $this->element = 0;
-        $this->yin = 0;
+    public function __construct($pCode,$pNom,$pElement,$pYin){
+        $this->code = $pCode;
+        $this->nom = $pNom;
+        $this->element = $pElement;
+        $this->yin = $pYin;
     }
 
     public function getCode(){

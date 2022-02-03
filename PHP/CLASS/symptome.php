@@ -4,9 +4,9 @@ class Symptome{
     private $ids;
     private $desc;
 
-    public function __construct(){
-        $this->ids = 0;
-        $this->desc = 0;
+    public function __construct($pIds,$pDesc){
+        $this->ids = $pIds;
+        $this->desc = $pDesc;
     }
 
     public function getIds(){
