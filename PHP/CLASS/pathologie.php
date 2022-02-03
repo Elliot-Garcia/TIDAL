@@ -6,11 +6,11 @@ class Pathologie{
     private $type;
     private $desc;
 
-    public function __construct(){
-        $this->idp = 0;
-        $this->meridien = 0;
-        $this->type = 0;
-        $this->desc = 0;
+    public function __construct($pIdp,$pMeridien,$pType,$pDesc){
+        $this->idp = $pIdp;
+        $this->meridien = $pMeridien;
+        $this->type = $pType;
+        $this->desc = $pDesc;
     }
 
     public function getIdp(){
