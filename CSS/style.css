@@ -5,6 +5,10 @@
     list-style-type: none;
     color:#000000;
 }
+body {
+    height: 100vh;
+    background-color: red;
+}
 :root {
     --main-color: #FFE4E1;
     --second-color:#FFDAB9 ;
@@ -29,18 +33,19 @@ header nav {
 }
 
 main {
-    height: calc(100vh - var(--header-height));
+    height: 100%;
     background-color: var(--main-color);
-    display: flex;
-    flex-direction: row;
     padding: var(--padding-page);
 }
 
 /* Page d'accueil */
+.main_index {
+    display: flex;
+    flex-direction: row;
+}
 
 .mainPart {
     flex-basis: 60%;
-    height: 100%;
 }
 .mainPart ul {
     height: 100%;
@@ -78,7 +83,7 @@ form {
 }
 
 /* Filtrage page Recherche */
-/*
+
 .form_filtre {
     display: block;
     width: 100%;
@@ -88,7 +93,7 @@ form {
     background-color: var(--main-color);
     height: 40px;
 }
-*/
+
 .form_filtre ul {
     display: flex;
     flex-direction: row;
