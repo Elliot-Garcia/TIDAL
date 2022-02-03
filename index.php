@@ -5,20 +5,12 @@
     <title>Acupunture</title>
 
     <link rel="stylesheet" href="../CSS/style.css">
-
-    <script src="jquery.js"></script> 
-
-    <script> 
-        $(function(){
-        $("#includedHeader").load("header.html"); 
-        });
-        $(function(){
-        $("#includedFooter").load("footer.html"); 
-        });
-    </script>
 </head>
 <body>
+    <!-- Header -->
     <?php require_once('HTML/header.html') ?>
+
+    <!-- Main page -->
     <main>
         <section class="mainPart">
             <ul class="ul_accueil">
