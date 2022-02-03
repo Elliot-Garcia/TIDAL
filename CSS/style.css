@@ -14,6 +14,7 @@
     --header-height: 50px;
 }
 
+/* General structure */
 header {
     padding: var(--padding-page);
     background-color: var(--nav-color);
@@ -27,7 +28,6 @@ header nav {
     height: 100%;
 }
 
-
 main {
     height: calc(100vh - var(--header-height));
     background-color: var(--main-color);
@@ -35,6 +35,9 @@ main {
     flex-direction: row;
     padding: var(--padding-page);
 }
+
+/* Page d'accueil */
+
 .mainPart {
     flex-basis: 60%;
     height: 100%;
@@ -56,14 +59,14 @@ form {
     padding: 10px;
 }
 
-ul {
+.ul_accueil {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 200px;
 }
 
-li {
+.ul_accueil li {
     display: flex;
     flex-direction: column;
 }
@@ -74,28 +77,35 @@ li {
     border-radius: 10px;
 }
 
-
-
-.navi {
+/* Filtrage page Recherche */
+/*
+.form_filtre {
+    display: block;
     width: 100%;
-    margin: 0 auto;
-    background-color: white;
+    background-color: blue;
     position: sticky;
     top: 0px;
     background-color: var(--main-color);
     height: 40px;
-
+}
+*/
+.form_filtre ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 100%;
 }
 
-nav ul {
-list-style-type: none;
-flex-direction: unset;
-height: 200px;
-width: 100%;
-
+.form_filtre li{
+    display: flex;
+    flex-direction: column;
 }
 
-nav ul li{
+/*
+.form_filtre li{
+    display: flex;
+    flex-direction: column;
     float: left;
     width: 10%;
     text-align: center;
@@ -122,7 +132,6 @@ nav a:hover{
 }
 
 .sous_menu{
-    display: none;
     background-color: white;
     padding-left: 0px;
     width: 100%;
@@ -182,3 +191,4 @@ input[type=text] {
  input[type=password]:focus {
     width: 70%;
   }
+  */
