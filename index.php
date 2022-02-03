@@ -21,7 +21,7 @@
                     <p>Salut ceci est la section 1 (1.5.x Louis)</p>
                 </li>
                 <li>
-                    <a href="PHP/recherche.php" class="link_recherche">
+                    <a href="PHP/DISPLAY/recherche.php" class="link_recherche">
                         <span>
                             Lancer une recherche
                         </span>
