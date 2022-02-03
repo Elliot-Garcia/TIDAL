@@ -18,16 +18,7 @@
     </script>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="accueil.html">
-                <img src="../MEDIA/Photo/logo.png" alt="logo" height="60" width="80"/>
-            </a>
-            <a href="user.html">
-                <img src="../MEDIA/Photo/identifiant.png" alt="Connexion" height="60" width="60"/>
-            </a>
-        </nav>
-    </header>
+    <?php require_once('HTML/header.html') ?>
     <main>
         <section class="mainPart">
             <ul class="ul_accueil">
