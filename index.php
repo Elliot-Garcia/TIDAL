@@ -5,4 +5,5 @@
     $smarty->assign('title', 'Acupuncture');
     $smarty->assign('page', 'TPL/accueil.tpl');
     $smarty->display('TPL/main_structure.tpl');
+    require_once('PHP/connexion.php');
 ?>

@@ -1,8 +1,8 @@
 <?php
-    $login=tidal;
-    $mdp=tidal;
+    $login='tidal';
+    $mdp='tidal';
     try {
-        $db = new PDO('host=localhost;bdname=aqdb', $login, $mdp);
+        $db = new PDO('host=localhost;bdname=acudb', $login, $mdp);
     } catch (PDOException $e) {
         print "Erreur !: " . $e->getMessage() . "<br/>";
         die();
