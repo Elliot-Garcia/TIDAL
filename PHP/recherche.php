@@ -1,21 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="accueil.html">
-                <img src="../MEDIA/Photo/logo.png" alt="logo" height="60" width="80"/>
-            </a>
-            <a href="user.html">
-                <img src="../MEDIA/Photo/identifiant.png" alt="Connexion" height="60" width="60"/>
-            </a>
-        </nav>
-    </header>
+    <?php require_once('../HTML/header.html') ?>
 
     <form class="form_filtre">
         <ul>
