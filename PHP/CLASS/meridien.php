@@ -29,3 +29,5 @@ class Meridien{
         return($this->yin);
     }
 }
+
+?>
