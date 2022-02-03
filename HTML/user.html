@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
     <title>Utilisateur</title>
+    <script> 
+        $(function(){
+        $("#includedHeader").load("header.html"); 
+        });
+        $(function(){
+        $("#includedFooter").load("footer.html"); 
+        });
+    </script>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <a href="accueil.html">
+                <img src="../MEDIA/Photo/logo.png" alt="logo" height="60" width="80"/>
+            </a>
+            <a href="user.html">
+                <img src="../MEDIA/Photo/identifiant.png" alt="Connexion" height="60" width="60"/>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="mainPart">
+            <p id="User_Account">Compte Utilisateur, vérifier Connexion</p>
+        </section>
+    </main>
+    <footer>
+    </footer>
 </body>
 </html>
