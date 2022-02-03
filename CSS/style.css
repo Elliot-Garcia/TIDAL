@@ -5,9 +5,12 @@
     list-style-type: none;
     color:#000000;
 }
+html {
+    min-height: 100%;
+}
 body {
-    height: 100vh;
-    background-color: red;
+    height: 100%;
+    background-color: var(--main-color);
 }
 :root {
     --main-color: #FFE4E1;
@@ -33,8 +36,6 @@ header nav {
 }
 
 main {
-    height: 100%;
-    background-color: var(--main-color);
     padding: var(--padding-page);
 }
 
@@ -86,12 +87,12 @@ form {
 
 .form_filtre {
     display: block;
-    width: 100%;
     background-color: blue;
     position: sticky;
     top: 0px;
     background-color: var(--main-color);
     height: 40px;
+    width: 100%;
 }
 
 .form_filtre ul {
