@@ -21,12 +21,10 @@
         <ul>
             <li>
                 <label for="meridien">Méridien</label>
-                <?php ?>
                 <select id="meridien" name="meridien" size="3">
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="fiat">Fiat</option>
-                  <option value="audi">Audi</option>
+                    <?php foreach ($meridien) :?>
+                    <option value=<?= htmlspecialchars($id)?>><?= htmlspecialchars($name)?></option>
+                    <?php endforeach ?>
                 </select> 
             </li>
             <li>
