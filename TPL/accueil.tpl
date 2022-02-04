@@ -1,5 +1,5 @@
 <main>
-    <div class="connexionPart">
+    <div class="main_index">
         <section class="mainPart">
             <ul class="ul_accueil">
                 <li>
