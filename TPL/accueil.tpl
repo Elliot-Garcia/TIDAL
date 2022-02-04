@@ -1,6 +1,5 @@
-{*include '../PHP/DISPLAY/accueil.php'*}
 <main>
-    <div class="main_index">
+    <div class="connexionPart">
         <section class="mainPart">
             <ul class="ul_accueil">
                 <li>
@@ -20,6 +19,8 @@
         </section>
         {if $connexion}
             {include file='TPL/connexion.tpl'}
+        {else}
+            {include file='TPL/accueil_compte.tpl'}
         {/if}
     </div>
 </main>
