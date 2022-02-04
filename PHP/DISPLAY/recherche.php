@@ -11,5 +11,4 @@
     $smarty->assign('res',$res);
 
     $smarty->display('../../TPL/main_structure.tpl');
-    require_once('PHP/connexion.php');
 ?>
