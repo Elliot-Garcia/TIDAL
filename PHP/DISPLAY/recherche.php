@@ -7,6 +7,7 @@
     $smarty->assign('title', 'Recherche');
     $smarty->assign('page', 'TPL/recherche.tpl');
 
+    $res=0;
     $smarty->assign('res',$res);
 
     $smarty->display('TPL/main_structure.tpl');
