@@ -5,7 +5,8 @@
 
     // Init page d'accueil
     $smarty = new Smarty();
-
+    
+    $connexion = true;
     $smarty->assign('connexion',$connexion);
 
     $smarty->assign('title', 'Acupuncture');
