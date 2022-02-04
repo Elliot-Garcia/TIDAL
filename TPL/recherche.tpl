@@ -2,12 +2,17 @@
         <ul>
             <li>
                 <label for="meridien">Méridien</label>
-                <select id="meridien" name="meridien" size="3">
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="fiat">Fiat</option>
-                  <option value="audi">Audi</option>
-                </select> 
+                <select multiple name="test">
+                  <option value=""></option>
+                  <option>American Black Bear</option>
+                  <option>Asiatic Black Bear</option>
+                  <option>Brown Bear</option>
+                  <option>Giant Panda</option>
+                  <option>Sloth Bear</option>
+                  <option>Sun Bear</option>
+                  <option>Polar Bear</option>
+                  <option>Spectacled Bear</option>
+                </select>
             </li>
             <li>
                 <label for="pathologie">Pathologie</label>
@@ -29,3 +34,4 @@
             </li>
         </ul>
 </form>
+{include file="./recherche_table.tpl"}
