@@ -1,6 +1,6 @@
 <?php
-    // Dossier d'installation de l'apt smarty3
-    // /!\ --> Attention, à adapter aux serveurs si Smarty.class.php installé ailleurs
+    $connexion = true;
+
     require_once('/usr/share/php/smarty3/Smarty.class.php');
 
     // Init page d'accueil
