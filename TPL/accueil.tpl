@@ -10,7 +10,7 @@
                     <p>Salut ceci est la section 1 (1.5.x Louis)</p>
                 </li>
                 <li>
-                    <a href="PHP/DISPLAY/page2.php" class="link_recherche">
+                    <a href="/HTML/recherche.html" class="link_recherche">
                         <span>
                             Lancer une recherche
                         </span>
