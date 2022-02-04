@@ -7,7 +7,7 @@
 </head>
 <body>
     {include file='TPL/header.tpl'}
-    {include file=$page}
+    {include file=$recherche}
 
     {include file='TPL/footer.tpl'}
 </body>
