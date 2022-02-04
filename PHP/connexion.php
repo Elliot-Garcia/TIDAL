@@ -1,5 +1,5 @@
 <?php
-    $login='tidal';
+    $login='pgtidal';
     $mdp='tidal';
     try {
         $db = new PDO('host=localhost;bdname=acudb', $login, $mdp);
