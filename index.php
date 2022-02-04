@@ -1,12 +1,11 @@
 <?php
-    $connexion = true;
 
     require_once('/usr/share/php/smarty3/Smarty.class.php');
 
     // Init page d'accueil
     $smarty = new Smarty();
     
-    $connexion = true;
+    $connexion = false;
     $smarty->assign('connexion',$connexion);
 
     $smarty->assign('title', 'Acupuncture');
