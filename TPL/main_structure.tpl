@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
-    {include file='TPL/header.tpl'}
+    {include file='./header.tpl'}
     {include file=$page}
-    {include file='TPL/footer.tpl'}
+    {include file='./footer.tpl'}
 </body>
 </html>

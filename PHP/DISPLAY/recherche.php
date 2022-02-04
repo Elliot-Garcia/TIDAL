@@ -5,11 +5,11 @@
     $smarty = new Smarty();
     
     $smarty->assign('title', 'Recherche');
-    $smarty->assign('page', 'TPL/recherche.tpl');
+    $smarty->assign('page', './recherche.tpl');
 
     $res=0;
     $smarty->assign('res',$res);
 
-    $smarty->display('TPL/main_structure.tpl');
+    $smarty->display('../../TPL/main_structure.tpl');
     require_once('PHP/connexion.php');
 ?>
