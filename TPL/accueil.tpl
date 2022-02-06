@@ -18,9 +18,9 @@
             </ul>
         </section>
         {if $connexion}
-            {include file='TPL/connexion.tpl'}
+            {include file='./accueil_compte.tpl'}
         {else}
-            {include file='TPL/accueil_compte.tpl'}
+            {include file='./connexion.tpl'}
         {/if}
     </div>
 </main>

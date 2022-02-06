@@ -3,13 +3,12 @@
     <table>
         <thead>
             <tr>
-                <th>Catégorie</th>
-                <th>Caractéristiques</th>
-                <th>A suivre</th>
+                <th>Pathologie</th>
+                <th>Symptomes</th>
             </tr>
         </thead>
         <tbody>
-            {foreach $data as $lines}
+            {foreach $data_patho as $lines}
                 <tr>
                 {foreach $lines as $elements}
                     <td>{$elements}</td>

@@ -5,34 +5,30 @@
   <ul>
       <li>
         <label for="meridien">Méridien</label>
-        <select class="select" multiple data-mdb-placeholder="M" data-mdb-clear-button="true">
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-          <option value="4">Four</option>
-          <option value="5">Five</option>
-          <option value="6">Six</option>
-          <option value="7">Seven</option>
-          <option value="8">Eight</option>
+        <select class="select" data-mdb-placeholder="M" data-mdb-clear-button="true">
+          <option disabled selected value=null> -- selectionner un méridien -- </option>
+          {foreach $data_meridien as $meridien}  
+            <option value={$meridien.code}>{$meridien.nom}</option>
+          {/foreach}
         </select>
       </li>
       <li>
-        <label for="pathologie">Pathologie</label>
-        <select id="pathologie" name="pathologie" size="3">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="fiat">Fiat</option>
-          <option value="audi">Audi</option>
-        </select> 
+        <label for="pathologie">Type de pathologie</label>
+        <select class="select" data-mdb-placeholder="M" data-mdb-clear-button="true">
+        <option disabled selected value=null> -- selectionner un type de pathologie -- </option>
+          {foreach $data_type_patho as $type_patho}  
+            <option value={$type_patho.type}>{$type_patho.type}</option>
+          {/foreach}
+        </select>
       </li>
       <li>
         <label for="carac">Caractéristiques</label>
-        <select id="carac" name="carac" size="3">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="fiat">Fiat</option>
-          <option value="audi">Audi</option>
-        </select> 
+        <select class="select" data-mdb-placeholder="M" data-mdb-clear-button="true">
+          <option disabled selected value=null> -- selectionner une caractéristique -- </option>
+          {foreach $data_meridien as $meridien}  
+            <option value={$meridien.code}>{$meridien.nom}</option>
+          {/foreach}
+        </select>
       </li>
   </ul>
   <input class="recherche-submit" type="submit">

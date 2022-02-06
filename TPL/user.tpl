@@ -1,7 +1,12 @@
 <main>
     <div class="main_index">
-        <section class="mainPart">
-            <p id="User_Account">Compte Utilisateur, vérifier Connexion</p>
-        </section>
+            {if $connexion}
+                {include file='./accueil_compte.tpl'}
+            {else}
+                <section>
+                    <p id="User_Account">Vous n'êtes pas connecté</p>
+                </section>
+                {include file='./connexion.tpl'}
+            {/if}
     </div>
 </main>

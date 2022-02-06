@@ -8,7 +8,6 @@
     $smarty->assign('connexion',$connexion);
 
     $smarty->assign('title', 'Compte');
-    $smarty->assign('page', 'TPL/user.tpl');
-    $smarty->display('TPL/main_structure.tpl');
-    require_once('PHP/connexion.php');
+    $smarty->assign('page', './user.tpl');
+    $smarty->display('../../TPL/main_structure.tpl');
 ?>
