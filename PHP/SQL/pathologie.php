@@ -1,7 +1,7 @@
 <?php
-$symptome = null;
-$meridien = null;
-$type_patho = null;
+$filtre_symptome = null;
+$filtre_meridien = null;
+$filtre_type_patho = null;
 $carac = null;
     require_once('../connexion.php');
     $query = "SELECT public.patho.desc AS patho, public.symptome.desc AS sympt FROM public.patho
@@ -16,9 +16,9 @@ $carac = null;
                 ORDER BY public.patho.desc ASC";
     $res=$db->prepare($query);
     $res->execute(array(
-        ':meridien' => $meridien,
-        ':type_patho' => $type_patho,
-        ':carac' => $carac
+        ':meridien' => $filtre_meridien,
+        ':type_patho' => $filtre_type_patho,
+        ':carac' => $filtre_carac
     ));
     $data_patho=$res->fetchAll(PDO::FETCH_ASSOC);
 ?>
