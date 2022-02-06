@@ -1,4 +1,5 @@
 <?php
+$symptome = null;
 $meridien = null;
 $type_patho = null;
 $carac = null;
@@ -20,5 +21,4 @@ $carac = null;
         ':carac' => $carac
     ));
     $data_patho=$res->fetchAll(PDO::FETCH_ASSOC);
-    //print_r($data_patho);
 ?>
