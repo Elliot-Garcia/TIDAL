@@ -10,8 +10,7 @@
 
     // Appel des informations pour la page
     require_once('../SQL/pathologie.php');
-    $data=$res->fetchAll();
-    //print_r($data);
+    $data=$res->fetchAll(PDO::FETCH_ASSOC);
     $smarty->assign('data',$data);
 
     // Affichage de la page
