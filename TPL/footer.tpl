@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../CSS/footer.css">
+<link rel="stylesheet" href="/CSS/footer.css">
 <footer>
     <div class="container">
         <img src="/MEDIA/img/logo.png" alt="logo" height="60" width="80"/>
