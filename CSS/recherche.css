@@ -1,0 +1,33 @@
+.recherche-page {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.recherche-form_filtre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recherche-form_filtre ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.recherche-form_filtre li{
+    display: flex;
+    flex-direction: column;
+}
+.recherche-textinput {
+    width: 60%;
+    height: 20px;
+}
+.recherche-submit {
+    width: 20%;
+}
+
+.recherche-table {
+    align-items: center;
+}
