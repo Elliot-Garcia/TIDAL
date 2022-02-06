@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/CSS/recherche.css">
 <div class="recherche-page">
-<form class="recherche-form_filtre">
+<form>
   <input class="recherche-textinput" type="text" placeholder="Recherche par symptomes">
   <ul>
       <li>

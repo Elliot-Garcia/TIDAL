@@ -5,6 +5,14 @@
     list-style-type: none;
     color:#000000;
 }
+:root {
+    --main-color: #FFE4E1;
+    --second-color:#FFDAB9 ;
+    --nav-color: #FFDAB9;
+    --main-text-color: white;
+    --padding-page: 10px;
+    --header-height: 50px;
+}
 html {
     min-height: 100%;
 }
@@ -12,29 +20,8 @@ body {
     height: 100%;
     background-color: var(--main-color);
 }
-:root {
-    --main-color: #FFE4E1;
-    --second-color:#FFDAB9 ;
-    --nav-color: white;
-    --main-text-color: white;
-    --padding-page: 10px;
-    --header-height: 50px;
-}
 
 /* General structure */
-header {
-    padding: var(--padding-page);
-    background-color: var(--nav-color);
-    height: var(--header-height);
-}
-header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
 main {
     padding: var(--padding-page);
 }

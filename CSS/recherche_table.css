@@ -1,0 +1,35 @@
+.wrap_scroll {
+    width: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 10px;
+    max-height: 450px;
+}
+thead {
+    position: sticky;
+    top: 0px;
+    background-color: rgba(248, 240, 240, 0.8);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+    
+    border-width: 1px;
+    border-style: solid;
+}
+th {
+    border: 1px solid;
+    padding: 10px;
+}
+td {
+    border: 1px solid;
+    padding: 5px;
+}
+tbody tr:nth-child(odd) {
+    background-color: red;
+}
+tbody tr:nth-child(even) {
+    background-color: pink;
+}

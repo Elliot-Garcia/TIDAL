@@ -4,19 +4,19 @@
     align-items: stretch;
 }
 
-.recherche-form_filtre {
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.recherche-form_filtre ul{
+form ul{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.recherche-form_filtre li{
+form li{
     display: flex;
     flex-direction: column;
 }
@@ -26,8 +26,4 @@
 }
 .recherche-submit {
     width: 20%;
-}
-
-.recherche-table {
-    align-items: center;
 }

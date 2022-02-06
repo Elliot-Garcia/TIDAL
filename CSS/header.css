@@ -1,0 +1,12 @@
+header {
+    padding: var(--padding-page);
+    background-color: var(--nav-color);
+    height: var(--header-height);
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
