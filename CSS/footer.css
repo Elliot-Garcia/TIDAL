@@ -1,0 +1,26 @@
+footer{
+    background-color: var(--nav-color);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.bienfait{
+    width: 30%;
+}
+
+.bienfait p{
+    font-size: 14px;
+    color: gray;
+   
+}
+
+.container li{
+    color: gray;
+}
+
+.a_propos{
+    width: 15%;
+
+}
