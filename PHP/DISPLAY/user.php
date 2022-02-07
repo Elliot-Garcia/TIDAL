@@ -4,8 +4,8 @@
     // Init page d'accueil
     $smarty = new Smarty();
     
-    $connexion = false;
-    $smarty->assign('connexion',$connexion);
+    $connect = false;
+    $smarty->assign('connect',$connect);
 
     $smarty->assign('title', 'Compte');
     $smarty->assign('page', './user.tpl');

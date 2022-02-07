@@ -4,8 +4,8 @@
     // Init page d'accueil
     $smarty = new Smarty();
     
-    $connexion = false;
-    $smarty->assign('connexion',$connexion);
+    $connect = true;
+    $smarty->assign('connect',$connect);
 
     $smarty->assign('title', 'Acupuncture');
     $smarty->assign('page', 'TPL/accueil.tpl');

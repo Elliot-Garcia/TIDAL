@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/CSS/recherche.css">
 <div class="recherche-page">
 <form action="./recherche.php" method="post">
-  <input class="recherche-textinput" type="text" placeholder="Recherche par symptomes">
+  <input disabled class="recherche-textinput" type="text" placeholder="Recherche par symptome">
   <ul>
       <li>
         <label for="meridien">Méridien</label>

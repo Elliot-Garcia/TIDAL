@@ -1,6 +1,6 @@
 <main>
     <div class="main_index">
-            {if $connexion}
+            {if $connect}
                 {include file='./accueil_compte.tpl'}
             {else}
                 <section>

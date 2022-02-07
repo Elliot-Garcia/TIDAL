@@ -3,6 +3,11 @@
 
     // Init page d'accueil
     $smarty = new Smarty();
+
+    //test connexion
+    $connect = false;
+    $smarty->assign('connect', $connect);
+
     
     // Configuration de la page à afficher
     $smarty->assign('title', 'Recherche');

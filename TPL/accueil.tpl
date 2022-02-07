@@ -17,7 +17,7 @@
                 </li>
             </ul>
         </section>
-        {if $connexion}
+        {if $connect}
             {include file='./accueil_compte.tpl'}
         {else}
             {include file='./connexion.tpl'}
