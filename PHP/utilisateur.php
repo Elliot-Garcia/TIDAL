@@ -6,5 +6,4 @@ if ($_POST['login']==$mdp)
     $_SESSION['user']= 'Bob';
 
 
-
 ?>
