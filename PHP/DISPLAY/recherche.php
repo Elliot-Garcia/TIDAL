@@ -17,8 +17,11 @@
     require_once('../SQL/meridien.php');
     $smarty->assign('data_meridien',$data_meridien);
 
-    require_once('../SQL/type_patho.php');
-    $smarty->assign('data_type_patho',$data_type_patho);
+    require_once('../READER/readJson_type.php');
+    $smarty->assign('types_patho',$types_patho);
+    
+    require_once('../READER/readJson_carac.php');
+    $smarty->assign('data_caracs',$caracs);
 
     // Appel des informations pour la page
     require_once('../SQL/pathologie.php');

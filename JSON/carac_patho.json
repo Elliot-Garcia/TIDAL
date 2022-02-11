@@ -1,0 +1,26 @@
+[
+    {
+        "code": "p",
+        "carac": "plein"
+    },
+    {
+        "code": "c",
+        "carac": "chaud"
+    },
+    {
+        "code": "v",
+        "carac": "vide"
+    },
+    {
+        "code": "f",
+        "carac": "froid"
+    },
+    {
+        "code": "i",
+        "carac": "interne"
+    },
+    {
+        "code": "e",
+        "carac": "externe"
+    }
+]
