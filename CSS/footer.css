@@ -1,5 +1,5 @@
 footer{
-    position: fixed;
+    position: relative;
     background-color: var(--nav-color);
     bottom:0;
 
