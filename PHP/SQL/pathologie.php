@@ -1,26 +1,27 @@
 <?php
 
-    $filtre_symptome = null;
-    if (!empty($_POST['filtre_meridien'])) {
-        $filtre_meridien = $_POST['filtre_meridien'];
-    }
-    else {$filtre_meridien=null;}
+    $filtre_meridien=null;
+    $filtre_type_patho=null;
+    $filtre_carac=null;
+    $filtre_sympt=null;
 
-    if (!empty($_POST['filtre_type_patho'])) {
-        $filtre_type_patho = $_POST['filtre_type_patho'];
-    }
-    else {$filtre_type_patho=null;}
+    if (isset($_POST['valider'])) {
+        if (!empty($_POST['filtre_meridien'])) {
+            $filtre_meridien = $_POST['filtre_meridien'];
+        }
 
-    if (!empty($_POST['filtre_carac'])) {
-        $filtre_carac = $_POST['filtre_carac'];
-    }
-    else {$filtre_carac=null;}
-    
-    if (!empty($_POST['filtre_sympt'])) {
-        $filtre_sympt = $_POST['filtre_sympt'];
-    }
-    else {$filtre_sympt=null;}
+        if (!empty($_POST['filtre_type_patho'])) {
+            $filtre_type_patho = $_POST['filtre_type_patho'];
+        }
 
+        if (!empty($_POST['filtre_carac'])) {
+            $filtre_carac = $_POST['filtre_carac'];
+        }
+        
+        if (!empty($_POST['filtre_sympt'])) {
+            $filtre_sympt = $_POST['filtre_sympt'];
+        }
+    }
     require_once('../connexion.php');
     $query = "SELECT public.patho.desc AS patho, public.symptome.desc AS sympt FROM public.patho
                 JOIN public.symptpatho
