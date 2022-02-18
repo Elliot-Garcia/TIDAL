@@ -12,8 +12,19 @@ class Pathologie{
         $this->idp = $pIdp;
         $this->meridien = $pMeridien;
         $this->type = $pType;
+        $this->symptome = find_symptomes();
         $this->desc = $pDesc;
     }
+
+    private function find_symptomes() {
+        //Requête sql pour trouver les symptomes
+        $_COOKIE['idp'] = $idp;
+        require_once("./../SQL/find_symptomes.php");
+        return $sympts_patho;
+    }
+
+
+
 
     public function getIdp(){
         return($this->idp);
