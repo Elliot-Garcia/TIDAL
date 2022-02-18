@@ -1,5 +1,5 @@
 <?php
-    $input_recherche = $GET['term'];
+    $input_recherche = $_GET['term'];
     
     $query="SELECT DISTINCT public.symptome.desc FROM public.symptome WHERE public.symptome.desc LIKE '%".$input_recherche."%' ORDER BY public.symptome.desc ASC";
 
