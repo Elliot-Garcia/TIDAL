@@ -5,7 +5,7 @@
 
     $smarty = new Smarty();
 
-    $connect = $_SESSION['Connected'];
+    $connect = $_SESSION['Connexion_check'];
     $smarty->assign('connect',$connect);
     $smarty->assign('title', 'Accueil');
     $smarty->assign('page', './accueil.tpl');
