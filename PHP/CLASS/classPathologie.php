@@ -4,6 +4,8 @@ class Pathologie{
     private $idp;
     private $meridien;
     private $type;
+    private $carac;
+    private $symptome;
     private $desc;
 
     public function __construct($pIdp,$pMeridien,$pType,$pDesc){
