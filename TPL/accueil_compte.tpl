@@ -1,3 +1,5 @@
 <section class="connexionPart">
-    yo t'es bien co
+    <form action="/PHP/DISPLAY/accueil.php" method="post"> 
+        <button name="Deco"> Deconnexion </button>
+    </form>
 </section>
