@@ -1,6 +1,4 @@
 <?php
-    $idp = $_COOKIE['idp'];
-
     require_once('../connexion.php');
 
     $query = "SELECT public.symptome.desc AS sympt FROM public.symptpatho
