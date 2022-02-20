@@ -1,10 +1,9 @@
 <?php
-    require_once('../connexion.php');
 
     $query = "SELECT public.patho.desc FROM public.patho
                 WHERE public.patho.idp = :idp";
 
-    $res=$db->prepare($query);
+    $res=$this->getDB()->prepare($query);
     $res->execute(array(
         ':idp' => $idp
     ));

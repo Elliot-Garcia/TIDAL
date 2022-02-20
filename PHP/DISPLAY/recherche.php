@@ -24,8 +24,8 @@
     $smarty->assign('data_caracs',$caracs);
 
     // Appel des informations pour la page
-    require_once('../SQL/pathologie.php');
-    $smarty->assign('data_patho',$data_patho);
+    require_once('../CLASS/generatorPathologie.php');
+    $smarty->assign('instances_pathos',$instances_pathos);
 
     // Affichage de la page
     $smarty->display('../../TPL/main_structure.tpl');

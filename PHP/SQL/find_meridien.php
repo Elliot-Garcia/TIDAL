@@ -6,10 +6,10 @@
                     ON public.patho.mer = public.meridien.code
                 WHERE public.patho.idp = :idp";
 
-    $res=$db->prepare($query);
+    $res=$this->getDB()->prepare($query);
     $res->execute(array(
         ':idp' => $idp
     ));
 
-    $mer_patho=$res->fetchAll(PDO::FETCH_ASSOC);
+    $mer_patho=$res->fetch(PDO::FETCH_ASSOC);
 ?>

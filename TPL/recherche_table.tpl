@@ -4,15 +4,16 @@
         <thead>
             <tr>
                 <th>Pathologie</th>
-                <th>Symptomes</th>
+                <th>Détails</th>
             </tr>
         </thead>
         <tbody>
-            {foreach $data_patho as $lines}
+            {foreach $instances_pathos as $patho}
                 <tr>
-                {foreach $lines as $elements}
-                    <td>{$elements}</td>
-                {/foreach}
+                    <td>{$patho->getDesc()}</td>
+                    <td>
+                        <a href="#">Détails</a>
+                    </td>
                 </tr>
             {/foreach}
         </tbody>

@@ -23,7 +23,7 @@
         }
     }
     require_once('../connexion.php');
-    $query = "SELECT public.patho.idp FROM public.patho
+    $query = "SELECT DISTINCT public.patho.idp, public.patho.desc FROM public.patho
                 JOIN public.symptpatho
                     ON public.patho.idp = public.symptpatho.idp
                 JOIN public.symptome
@@ -41,5 +41,5 @@
         ':carac' => '%'.$filtre_carac.'%',
         ':f_sympt' => '%'.$filtre_sympt.'%'
     ));
-    $idp_patho=$res->fetchAll(PDO::FETCH_ASSOC);
+    $data_patho=$res->fetchAll(PDO::FETCH_ASSOC);
 ?>
