@@ -12,7 +12,7 @@
                 <tr>
                     <td>{$patho->getDesc()}</td>
                     <td>
-                        <a href="#">Détails</a>
+                        <a href="details.php?idp={$patho->getIdp()}">Détails</a>
                     </td>
                 </tr>
             {/foreach}
