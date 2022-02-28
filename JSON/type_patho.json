@@ -1,6 +1,6 @@
 [
     {
-        "code": "m&(?!mv)",
+        "code": "(m)(?!mv)",
         "type": "méridien"
     },
     {

@@ -31,14 +31,14 @@
                 WHERE
                     COALESCE(public.patho.mer = :meridien, True)
                     AND COALESCE(public.patho.type ~ :type_patho, True)
-                    AND COALESCE(public.patho.type LIKE :carac, True)
+                    AND COALESCE(public.patho.type ~ :carac, True)
                     AND COALESCE(public.symptome.desc LIKE :f_sympt, True)
                 ORDER BY public.patho.desc ASC";
     $res=$db->prepare($query);
     $res->execute(array(
         ':meridien' => $filtre_meridien,
         ':type_patho' => $filtre_type_patho,
-        ':carac' => '%'.$filtre_carac.'%',
+        ':carac' => $filtre_carac,
         ':f_sympt' => '%'.$filtre_sympt.'%'
     ));
     $data_patho=$res->fetchAll(PDO::FETCH_ASSOC);
