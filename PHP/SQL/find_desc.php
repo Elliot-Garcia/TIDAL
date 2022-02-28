@@ -8,5 +8,5 @@
         ':idp' => $idp
     ));
 
-    $sympts_patho=$res->fetchAll(PDO::FETCH_ASSOC);
+    $desc_patho=$res->fetchAll(PDO::FETCH_ASSOC);
 ?>

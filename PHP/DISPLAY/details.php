@@ -1,12 +1,15 @@
 <?php
     require_once('/usr/share/php/smarty3/Smarty.class.php');
+    require_once('../connexion.php');
+    require_once("./../READER/readJson_carac.php");
+    require_once("./../READER/readJson_type.php");
 
     $smarty = new Smarty();
 
     $idp = $_GET['idp'];
-    $pathos = $_SESSION['pathos'];
-    $patho = array_search($idp, array_column($pathos, 'idp'));
-    $smarty->assign('patho',$patho);
+    require_once("./../CLASS/classPathologie.php");
+
+    $smarty->assign('patho', new Pathologie($idp, null, $db, $caracs, $types_patho));
 
     $titre = 'Détails Pathologie';
     $smarty->assign('title', $titre);

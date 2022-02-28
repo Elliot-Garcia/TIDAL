@@ -9,18 +9,48 @@
                 </td>
                 <td>
                     <ul>
-                    {foreach $patho->find_symptomes($patho->getIdp()) as $sympt}
+                    {foreach $patho->getSympts() as $sympt}
                         <li>
-                            {$sympt}
+                            {$sympt['desc']}
                         </li>
                     {/foreach}
                     </ul>
                 </td>
+            </tr>
+            <tr>
                 <td>
                     Méridien :
                 </td>
                 <td>
-                    {$patho->find_meridien($patho->getIdp())}
+                    {$patho->getMer()}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Type de pathologie :
+                </td>
+                <td>
+                    <ul>
+                    {foreach $patho->getTypes() as $type}
+                        <li>
+                            {$type}
+                        </li>
+                    {/foreach}
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Caractéristiques :
+                </td>
+                <td>
+                    <ul>
+                    {foreach $patho->getCaracs() as $carac}
+                        <li>
+                            {$carac}
+                        </li>
+                    {/foreach}
+                    </ul>
                 </td>
             </tr>
         </tbody>

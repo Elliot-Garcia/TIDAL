@@ -27,9 +27,6 @@
     require_once('../CLASS/generatorPathologie.php');
     $smarty->assign('instances_pathos',$instances_pathos);
 
-    session_start();
-    $_SESSION['pathos'] = $instances_pathos;
-
     // Affichage de la page
     $smarty->display('../../TPL/main_structure.tpl');
 ?>
