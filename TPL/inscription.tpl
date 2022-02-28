@@ -1,12 +1,12 @@
 <section class="connexionPart">
-    <h1 class="titre">Connexion</h1>
+    <h1>Inscription</h1>
     <form class="bordure_connexion" method="post" action="/PHP/DISPLAY/accueil.php">  {*ne pas appeler index.php mais une page accueil*}
         <ul class="ul_accueil">
             <li>
                 <span>
                     email
                 </span>
-                <input type="text" placeholder="Ex: nom@exemple.com" name="email"/>
+                <input type="text" placeholder="Ex: nom@exemple.com" name="email_inscription"/>
             </li>
             <li>
                 <span>
@@ -18,8 +18,5 @@
                 <input type="submit">
             </li>
         </ul>
-    </form>
-    <form action="/PHP/DISPLAY/inscription.php">
-        <button>s'inscrire</button>
     </form>
 </section>
