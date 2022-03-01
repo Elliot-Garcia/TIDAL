@@ -1,6 +1,6 @@
 <?php
     require_once('/usr/share/php/smarty3/Smarty.class.php');
-    require_once('PHP/READER/readJson_utilisateur.php');
+    session_start();
     // Init page d'accueil
     $smarty = new Smarty();
     

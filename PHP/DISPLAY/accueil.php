@@ -1,10 +1,11 @@
 <?php
 
     require_once('/usr/share/php/smarty3/Smarty.class.php');
+    session_start();
+    require_once('../TRAITMENT_JSON/exeJson_inscription.php');
     require_once('../READER/readJson_utilisateur.php');
 
     $smarty = new Smarty();
-
     $connect = $_SESSION['Connexion_check'];
     $smarty->assign('connect',$connect);
     $smarty->assign('title', 'Accueil');

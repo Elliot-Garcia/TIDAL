@@ -1,11 +1,12 @@
 <?php
     require_once('/usr/share/php/smarty3/Smarty.class.php');
+    session_start();
 
     // Init page d'accueil
     $smarty = new Smarty();
 
     //test connexion
-    $connect = false;
+    $connect = $_SESSION['Connexion_check'];
     $smarty->assign('connect', $connect);
 
     
