@@ -1,6 +1,9 @@
 <section class="connexionPart">
     <h1 class="titre">Connexion</h1>
-    <form class="bordure_connexion" method="post" action="/PHP/DISPLAY/accueil.php">  {*ne pas appeler index.php mais une page accueil*}
+    <form class="bordure_connexion" method="post" action="/PHP/DISPLAY/accueil.php"> 
+        {if $connect_failed}
+         salut
+         {/if}
         <ul class="ul_accueil">
             <li>
                 <span>

@@ -7,7 +7,10 @@
 
     $smarty = new Smarty();
     $connect = $_SESSION['Connexion_check'];
+    $connect_failed = $_SESSION['Connexion_failed'];
+    echo $connect_failed;
     $smarty->assign('connect',$connect);
+    $smarty->assign('connect_failed',$connect_failed);
     $smarty->assign('title', 'Accueil');
     $smarty->assign('page', './accueil.tpl');
     $smarty->display('../../TPL/main_structure.tpl');

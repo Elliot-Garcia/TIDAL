@@ -9,7 +9,7 @@
             </a>
         {if $connect}
             <a href="/PHP/DISPLAY/user.php">
-                <img src="/MEDIA/img/book_sans_32.png" alt="Connexion" height="60" width="60"/>
+                <img src="/MEDIA/img/verify_account.png" alt="Connexion" height="60" width="60"/>
             </a>
         {else}
             <a href="/PHP/DISPLAY/user.php">

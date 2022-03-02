@@ -11,10 +11,13 @@ if (isset($_POST['email'])){
     foreach ($data as $login){
         if (($_POST['email']==$login['email'])){
             if ($_POST['mdp']==$login['mdp']){
-                $_SESSION['Connected'] = true;
                 $_SESSION['Connexion_check'] = true;
+                $_SESSION['Connexion_failed'] = false;
                 echo connecté;
             }
+        }
+        else {
+            $_SESSION['Connexion_failed'] = true;
         }
     }
 }
