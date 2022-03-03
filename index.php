@@ -1,6 +1,9 @@
 <?php
     require_once('/usr/share/php/smarty3/Smarty.class.php');
-    session_start();
+    
+    //Init connexion
+    require_once('PHP/CHECK_CO/init_connexion.php');
+
     // Init page d'accueil
     $smarty = new Smarty();
     
