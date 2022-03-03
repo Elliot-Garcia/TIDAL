@@ -9,9 +9,10 @@
     
     $connect = $_SESSION['Connexion_check'];
     $smarty->assign('connect',$connect);
+    $connect_failed = $_SESSION['Connexion_failed'];
+    $smarty->assign('connect_failed',$connect_failed);
 
     $smarty->assign('title', 'Acupuncture');
     $smarty->assign('page', 'TPL/accueil.tpl');
     $smarty->display('TPL/main_structure.tpl');
-    require_once('PHP/connexion.php');
 ?>
