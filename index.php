@@ -15,4 +15,5 @@
     $smarty->assign('title', 'Acupuncture');
     $smarty->assign('page', 'TPL/accueil.tpl');
     $smarty->display('TPL/main_structure.tpl');
+    
 ?>

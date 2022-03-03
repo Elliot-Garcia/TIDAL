@@ -1,9 +1,10 @@
 <?php
 
 $data = json_decode(file_get_contents('./../../JSON/login_user.json'),true);
-//echo($_POST['Deco']);
+
 if (isset($_POST['Deco'])) {
     $_SESSION['Connexion_check'] = false;
+    $_SESSION['Connexion_failed'] = false;
 }
 if (isset($_POST['email'])){
     foreach ($data as $login){

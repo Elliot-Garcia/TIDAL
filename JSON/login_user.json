@@ -1,1 +1,6 @@
-[{"email":"Julien","mdp":"123"},{"email":"Julien","mdp":"julien"},{"email":"Elliot","mdp":"elliot"}]
+[
+    {
+        "email":"Julien",
+        "mdp":"123"
+    }
+]

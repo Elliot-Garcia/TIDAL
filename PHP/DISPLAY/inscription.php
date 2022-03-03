@@ -5,7 +5,6 @@
 
     $smarty = new Smarty();
 
-    $connect = $_SESSION['Connexion_check'];
     $smarty->assign('connect',$connect);
     $smarty->assign('title', 'Inscription');
     $smarty->assign('page', './inscription.tpl');
