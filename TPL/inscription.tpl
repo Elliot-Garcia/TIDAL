@@ -1,6 +1,6 @@
 <section class="connexionPart">
     <h1>Inscription</h1>
-    <form class="bordure_connexion" method="post" action="/PHP/DISPLAY/accueil.php">  {*ne pas appeler index.php mais une page accueil*}
+    <form class="bordure_connexion" method="post" action="/JSON/redirect.php">  {*ne pas appeler index.php mais une page accueil*}
         <ul class="ul_accueil">
             <li>
                 <span>

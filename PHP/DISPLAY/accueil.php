@@ -14,4 +14,6 @@
     $smarty->assign('page', './accueil.tpl');
     $smarty->display('../../TPL/main_structure.tpl');
 
+
+
 ?>
