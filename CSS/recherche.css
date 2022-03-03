@@ -23,8 +23,19 @@ form li{
 .recherche-textinput {
     width: 60%;
     height: 20px;
+
+
+
 }
 .recherche-submit {
+    display: inline-block;
     width: 20%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 2px;
+    margin-right: 3.5%;
+
 }
 

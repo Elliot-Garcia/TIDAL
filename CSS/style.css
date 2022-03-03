@@ -73,6 +73,10 @@ button:hover {
     opacity: 0.5;
   }
 
+input:hover {
+    opacity: 0.5;
+  }
+
 
 .ul_accueil {
     display: flex;
