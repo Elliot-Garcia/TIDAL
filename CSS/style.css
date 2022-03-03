@@ -52,6 +52,28 @@ form {
     padding: 10px;
 }
 
+.bouton{
+    display: inline-block;
+    background-color: var(--second-color);
+    border-radius: 5px;
+    border: 2px double black;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    padding: 3px;
+    width: 150px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.5;
+  }
+
+
 .ul_accueil {
     display: flex;
     flex-direction: column;
@@ -82,6 +104,11 @@ form {
     width: 100%;
 }
 
+.connexion_inscription{
+    display: flex;
+    margin-left: 10px
+}
+
 .form_filtre ul {
     display: flex;
     flex-direction: row;
@@ -95,6 +122,12 @@ form {
     flex-direction: column;
 }
 
+.error{
+    height: auto;
+    font-size: 100%;
+    font-style: italic;
+    color: red;
+}
 
 /*
 .form_filtre li{
