@@ -2564,4 +2564,4 @@ COMMENT ON COLUMN public.user."mdp"
 --
 
 INSERT INTO public.user(email,mdp) VALUES
-('julien', '123'),
+('julien', '123');
