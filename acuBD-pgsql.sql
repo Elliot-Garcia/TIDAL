@@ -2545,19 +2545,10 @@ INSERT INTO public.symptPatho(idS, idP, aggr) VALUES
 -- Structure de la table `user`
 --
 
-DROP TABLE IF EXISTS public.user;
 CREATE TABLE public.user (
-  "email" character varying(100) 
-          NOT NULL,
-  "mdp" character varying(100) 
-          NOT NULL,
+   email VARCHAR(50) NOT NULL,
+   mdp VARCHAR(50) NOT NULL,
 );
-COMMENT ON TABLE public.user
-  IS 'id connexion user';
-COMMENT ON COLUMN public.user."email" 
-  IS 'email utilisateur';
-COMMENT ON COLUMN public.user."mdp" 
-  IS 'mot de passe utilisateur';
 
 --
 -- Contenu de la table `user`
