@@ -3,8 +3,8 @@ footer{
     position: absolute;
     background-color: var(--nav-color);
     bottom:0px;
-
 }
+
 .container{
     display: flex;
     justify-content: space-between;
