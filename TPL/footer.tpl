@@ -9,7 +9,7 @@
         </ul>
         <ul class="a_propos">
             <h3>A propos</h3>
-            <li>jeune entrepreneur Bonjour</li>
+            <li>Equipe 1.</li>
         </ul>
         <ul class ="a_propos">
             <h3>Coordonnées</h3>
