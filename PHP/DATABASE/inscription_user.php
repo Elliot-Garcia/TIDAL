@@ -2,7 +2,7 @@
 
 if(isset($_POST['email_inscription'])){
     
-    require_once('../connexion.php');
+    require_once('create_new_table.php');
 
     $sql_queri1 = "INSERT INTO public.user(email,mdp) VALUES ('{$_POST['email_inscription']}','{$_POST['mdp']}')";
 
