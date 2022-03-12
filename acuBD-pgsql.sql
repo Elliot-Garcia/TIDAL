@@ -2545,7 +2545,7 @@ INSERT INTO public.symptPatho(idS, idP, aggr) VALUES
 -- Structure de la table `user`
 --
 
-CREATE TABLE public.user (
+CREATE TABLE user (
    email VARCHAR(50) NOT NULL,
    mdp VARCHAR(50) NOT NULL,
 );
