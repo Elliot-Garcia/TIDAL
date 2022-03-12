@@ -2542,7 +2542,7 @@ INSERT INTO public.symptPatho(idS, idP, aggr) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `patho`
+-- Structure de la table `user`
 --
 
 DROP TABLE IF EXISTS public.user;
@@ -2552,9 +2552,16 @@ CREATE TABLE public.user (
   "mdp" character varying(100) 
           NOT NULL,
 );
-COMMENT ON TABLE public.patho
-  IS 'Pathologies';
-COMMENT ON COLUMN public.patho."email" 
+COMMENT ON TABLE public.user
+  IS 'id connexion user';
+COMMENT ON COLUMN public.user."email" 
   IS 'email utilisateur';
-COMMENT ON COLUMN public.patho."mdp" 
+COMMENT ON COLUMN public.user."mdp" 
   IS 'mot de passe utilisateur';
+
+--
+-- Contenu de la table `user`
+--
+
+INSERT INTO public.user(email,mdp) VALUES
+('julien', '123'),
