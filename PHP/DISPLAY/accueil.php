@@ -2,7 +2,8 @@
 
     require_once('/usr/share/php/smarty3/Smarty.class.php');
     session_start();
-    require_once('../READER/readJson_utilisateur.php');
+    require_once('../DATABASE/inscription_user.php');
+    require_once('../DATABASE/connexion_user.php');
     require_once('../CHECK_CO/check_connexion.php');
     $smarty = new Smarty();
 

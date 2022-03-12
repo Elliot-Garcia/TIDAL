@@ -1,16 +1,17 @@
 <?php
     require_once('/usr/share/php/smarty3/Smarty.class.php');
     require_once('../connexion.php');
+    session_start();
     require_once("./../READER/readJson_carac.php");
     require_once("./../READER/readJson_type.php");
+    require_once('../CHECK_CO/check_connexion.php');
+
     
-    session_start();
+    
 
     // Init page d'accueil
     $smarty = new Smarty();
 
-    //test connexion
-    $connect = $_SESSION['Connexion_check'];
     $smarty->assign('connect', $connect);
 
     $idp = $_GET['idp'];

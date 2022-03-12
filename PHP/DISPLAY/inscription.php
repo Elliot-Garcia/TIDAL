@@ -4,7 +4,6 @@
     require_once('../CHECK_CO/check_connexion.php');
 
     $smarty = new Smarty();
-
     $smarty->assign('connect',$connect);
     $smarty->assign('title', 'Inscription');
     $smarty->assign('page', './inscription.tpl');
