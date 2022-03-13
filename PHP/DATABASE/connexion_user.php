@@ -22,15 +22,4 @@
         }
     }
 
-
-
-/*
-    $sql = "SELECT * FROM public.user";
-
-    foreach($db->query($sql) as $row){
-        print $row['email'].'-'.$row['mdp'].'<br/>';
-
-    }
-*/
-
 ?>
