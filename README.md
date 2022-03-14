@@ -1,3 +1,4 @@
+### Equipe 1 : Boiteux, Falgayrettes, Garcia, Messié
 ## Connexion avec base de données
 
 ### Création de la table User
