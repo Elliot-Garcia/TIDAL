@@ -21,4 +21,4 @@ Pour se connecter il suffit de rentrer les identifiants que l'on a mis lors de l
 
 ### Mind Map du site
 
-![MindMap](MEDIA/img/mindmap.PNG)
+![MindMap](MEDIA/img/mindmap.png)
